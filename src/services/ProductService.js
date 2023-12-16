@@ -15,7 +15,7 @@ export class ProductService {
 
     //UPDATE
     updateProduct(producto) {
-        return axios.put(this.baseUrl + "/" + producto.id, producto).then(res => res.data);
+        return axios.put(this.baseUrl + "/" + producto._id, producto).then(res => res.data);
     }
 
     //DELETE
@@ -24,6 +24,7 @@ export class ProductService {
     }
 
     findProductById(_id) {
+        console.log("findProductById: " + _id)
         return axios.get(this.baseUrl + "/" + _id).then(res => res.data);
     }
 

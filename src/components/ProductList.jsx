@@ -42,7 +42,7 @@ const ProductList = () => {
                 <DataTable
                     value={products}
                     selectionMode="single"
-                    onSelectionChange={(e) => saveProduct(e.value.id)}
+                    onSelectionChange={(e) => saveProduct(e.value._id)}
                     footer={footer}
                 >
                     <Column field="_id" header="Id"/>
