@@ -45,7 +45,7 @@ const ProductList = () => {
                     onSelectionChange={(e) => saveProduct(e.value.id)}
                     footer={footer}
                 >
-                    <Column field="id" header="Id"/>
+                    <Column field="_id" header="Id"/>
                     <Column field="nombre" header="Nombre"/>
                     <Column field="precio" header="Precio"/>
                     <Column header="Foto Url" body={imageBodyTemplate}/>
