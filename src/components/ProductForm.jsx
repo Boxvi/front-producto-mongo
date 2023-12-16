@@ -83,14 +83,7 @@ const ProductForm = (props) => {
                 footer={dialogFooter}
             >
                 <div className="p-grid p-fluid">
-                    <br/>
-                    <div className="p-float-label">
-                        <InputText
-                            value={productData.id}
-                            onChange={(e) => updateField(e.target.value.trim(), "id")}
-                        />
-                        <label>ID: </label>
-                    </div>
+                    
                     <br/>
                     <div className="p-float-label">
                         <InputText
@@ -137,3 +130,14 @@ const ProductForm = (props) => {
 };
 
 export default ProductForm;
+
+/*
+<br/>
+                    <div className="p-float-label">
+                        <InputText
+                            value={productData.id}
+                            onChange={(e) => updateField(e.target.value.trim(), "id")}
+                        />
+                        <label>ID: </label>
+                    </div>
+*/
