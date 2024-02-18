@@ -1,18 +1,15 @@
-import "primereact/resources/themes/lara-light-indigo/theme.css";  //theme
-import "primereact/resources/primereact.min.css";                  //core css
-import "primeicons/primeicons.css";                                //icons
-import './App.css';
-import ProductContextProvider from "./contexts/ProductContext";
-import ProductList from "./components/ProductList";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import ShowUsers from "./components/ShowUsers";
+
 
 function App() {
-  return (
-    <div className="App">
-      <ProductContextProvider>
-        <ProductList/>
-      </ProductContextProvider>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<ShowUsers/>}/>
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;
