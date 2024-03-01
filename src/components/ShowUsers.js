@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 
 function ShowUsers() {
 
-    const api = "https://api-producto-mongo.onrender.com/api/v2/productos";
+    const api = "https://glorious-space-goldfish-v7vw9ppjg69c6ww-8080.app.github.dev/api/v2/productos";
 
 
     const [productos, setProductos] = useState([]);
