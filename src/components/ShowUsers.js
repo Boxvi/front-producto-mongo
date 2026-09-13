@@ -164,7 +164,7 @@ function ShowUsers() {
                                     <tr key={producto._id}>
                                         <td>{producto._id}</td>
                                         <td>{producto.nombre}</td>
-                                        <td><img src={producto.fotoUrl} width={50}/></td>
+                                        <td><img src={producto.fotoUrl} alt={producto.nombre} width={50}/></td>
                                         <td>$ {producto.precio}</td>
                                         <td>$ {producto.stock}</td>
                                         <td>$ {producto.total}</td>
