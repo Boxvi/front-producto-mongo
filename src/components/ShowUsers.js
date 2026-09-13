@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 
 function ShowUsers() {
 
-    const api = "https://api-producto-mongo.onrender.com/api/v2/productos";
+    const api = "https://api.boxvisoft.com/prueba1/api/v2/productos";
 
 
     const [productos, setProductos] = useState([]);
