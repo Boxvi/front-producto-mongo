@@ -1,0 +1,17 @@
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <title>404 — Página no encontrada</title>
+  <link rel="icon" type="image/svg+xml" th:href="@{/favicon.svg}" />
+  <link rel="stylesheet" th:href="@{/css/index.css}" />
+</head>
+<body class="min-h-screen flex items-center justify-center bg-slate-900 text-slate-100">
+  <div class="text-center p-8">
+    <h1 class="text-8xl font-bold text-sky-400 m-0">404</h1>
+    <p class="text-xl my-4">La página <code th:text="${path}">/x</code> no existe.</p>
+    <a th:href="@{/}" class="inline-block border border-sky-400 text-sky-400 px-5 py-2 rounded-lg hover:bg-sky-400 hover:text-slate-900 transition">
+      Volver al inicio
+    </a>
+  </div>
+</body>
+</html>

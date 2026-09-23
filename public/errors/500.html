@@ -1,0 +1,16 @@
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <title>500 — Error del servidor</title>
+  <link rel="stylesheet" th:href="@{/css/index.css}" />
+</head>
+<body class="min-h-screen flex items-center justify-center bg-slate-900 text-slate-100">
+  <div class="text-center p-8">
+    <h1 class="text-8xl font-bold text-red-400 m-0">500</h1>
+    <p class="text-xl my-4">Algo salió mal. Intenta de nuevo en un momento.</p>
+    <a th:href="@{/}" class="inline-block border border-red-400 text-red-400 px-5 py-2 rounded-lg hover:bg-red-400 hover:text-slate-900 transition">
+      Volver al inicio
+    </a>
+  </div>
+</body>
+</html>
